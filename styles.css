@@ -1,0 +1,121 @@
+body {
+    font-family: 'Garamond', serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F2;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #1995AD;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+footer p {
+    color: #A1D6E2;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #1995AD;
+}
+
+.slide {
+    display: none;
+    padding: 50px;
+    text-align: center;
+    color: #333;
+    height: 100vh;  /* Makes sure slide takes full view height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide-image {
+    width: 300px; /* Square size */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    background-color: #A1D6E2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.text {
+    color: #1995AD;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text.highlight {
+    color: #FFFFFF;
+    background-color: #1995AD;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+form input[type="text"], form input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #1995AD;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #1995AD;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #A1D6E2;
+    color: #1995AD;
+}
+
+.dots-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #1995AD;
+}
